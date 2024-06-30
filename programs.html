@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs - Amikom Yogyakarta University</title>
+    <link rel="stylesheet" href="program.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg" style="background-color: rgb(87, 27, 206);">
+            <img class="change-my-color"
+                src="file:///D:/Html/Final%20Project/PPW_3013/Asset%20Svg/phone-call-auricular-symbol-in-black_icon-icons.com_56483.svg"
+                alt="phonelogo" style="width: 1%;">
+            <hr>
+            <a class="navbar-brand" style="font-size: 10pt; color: aliceblue;">(0274) 884201 - 207</a>
+            <hr>
+            <img class="change-my-color"
+                src="file:///D:/Html/Final%20Project/PPW_3013/Asset%20Svg/mail_email_message_electronic_online_web_icon-icons.com_59986.svg"
+                alt="emaillogo" style="width: 1%;">
+            <a class="navbar-brand" style="font-size: 10pt; color: aliceblue;">amikom@amikom.ac.id</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav" style="font-size: 9pt;">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#" style="color: white;">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" style="color: white;">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <header>
+        <nav class="navbar navbar-expand-lg" style="background-color: rgb(149, 47, 208);">
+            <a class="navbar-brand" href="#">
+                <img src="amikom.png" alt="University amikom yogyakarta Logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav" style="font-size: 12pt;">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html" style="color: white;">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="programs.html" style="color: white;">Programs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="admissions.html" style="color: white;">Admissions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pmb.html" class="pmb" style="color: white;">PMB</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" style="color: white;">Berita</a></li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit"
+                        style="align-items:center; background-color: rgb(203, 223, 89);">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <div class="content">
+        <div class="container">
+            <img src="search.png" alt="Search Icon" class="search-icon">
+            <div class="header">Fakultas & Program Study</div>
+            <div class="subheader">Our programs are designed to shape future leaders.<br>Explore our programs below.
+            </div>
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide">
+                        <h2>Fakultas Ilmu Komputer</h2>
+                    </div>
+                    <div class="slide">
+                        <h2>Fakultas Ekonomi dan Sosial</h2>
+                    </div>
+                    <div class="slide">
+                        <h2>Fakultas Sains & Teknologi</h2>
+                    </div>
+                    <div class="slide">
+                        <h2>Pascasarjana</h2>
+                    </div>
+                </div>
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+        </div>
+    </div>
+    <div id="content">
+        <h3>Fakultas Ilmu Komputer</h3>
+        <ul id="program-list">
+            <li onclick="changeProgram('Sistem Informasi')">Sistem Informasi</li>
+            <li onclick="changeProgram('D3 Teknik Informatika')">D3 Teknik Informatika</li>
+            <li onclick="changeProgram('D3 Manajemen Informatika')">D3 Manajemen Informatika</li>
+            <li onclick="changeProgram('Informatika')">Informatika</li>
+            <li onclick="changeProgram('Teknologi Informasi')">Teknologi Informasi</li>
+            <li onclick="changeProgram('Teknik Komputer')">Teknik Komputer</li>
+        </ul>
+    </div>
+
+    <div id="program-content">
+        <h4>Sistem Informasi</h4>
+        <p>Program Studi Sistem Informasi berfokus pada pengembangan sistem informasi yang efektif dan efisien untuk mendukung operasi bisnis dan organisasi.</p>
+    </div>
+
+
+    <footer class="footer">
+        <p>&copy; 2024 Amikom Yogyakarta University</p>
+    </footer>
+
+    <script src="program.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"
+        integrity="sha384-8eVFHgOY0GXabBqztdRGPeMIBZkj+fW/WsoBWr2jY7pNm3E+VAP46vb/JyRJNnYT" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+x+ctVSlBkEYL6ILlQ6Z8xm3JB8AZhU6HVv" crossorigin="anonymous"></script>
+</body>
+</html>
